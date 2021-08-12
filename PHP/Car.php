@@ -5,4 +5,12 @@
     public $driver;
     public $passegenger;
 
+  public function __construct($license, $driver) {
+    $this->license = $license;
+    $this->driver = $driver;
+  }
+
+  public function toPrint(){
+    echo "license: $this->license, conductor: {$this->driver->name}, document: {$this->driver->document}";
+  }
 }
