@@ -2,7 +2,7 @@
 require_once("Account.php");
 
 class Car{
-    public $id;
+    private $id;
     public $license;
     public $driver;
     public $passegenger;
@@ -15,4 +15,44 @@ class Car{
     public function toPrint(){
         echo "license: $this->license, conductor: {$this->driver->name}, document: {$this->driver->document}";
     }
+    public function getId()
+    {
+        return $this->id; 
+    }
+
+    public function setId($id)
+    {
+        $this->getId();     
+    }
+
+    public function getLicense()
+    {
+        return $this->license; 
+    }
+
+    public function setLicense($license)
+    {
+        $this->getLicense();     
+    }
+
+    public function getDriver()
+    {
+        return $this->driver; 
+    }
+
+    public function setDriver($driver)
+    {
+        $this->getDriver();     
+    }
+
+    public function getPassenger()
+    {
+        return $this->passenger; 
+    }
+
+    public function setPassenger($passenger)
+    {
+        $this->getPassenger();     
+    }
+
 }
