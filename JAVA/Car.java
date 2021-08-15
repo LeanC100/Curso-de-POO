@@ -44,7 +44,11 @@ public class Car {
     }
 
     public void setPassegenger(Integer passegenger) {
-        this.passegenger = passegenger;
+        if (passegenger == 4) {
+            this.passegenger = passegenger;
+        } else {
+            System.out.println("Necesitas 4 pasajeros");
+        }
     }
 
     

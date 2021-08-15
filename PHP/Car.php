@@ -50,9 +50,15 @@ class Car{
         return $this->passenger; 
     }
 
-    public function setPassenger($passenger)
-    {
-        $this->getPassenger();     
+public function setPassenger($passenger) {
+        
+    if ($passenger == 4) {
+        $this->passenger = $passenger;
     }
+    else {
+        echo "Necesitas asignar 4 pasajeros";
+    }
+
+}
 
 }

@@ -26,4 +26,10 @@ public class UberX extends Car {
         this.model = model;
     }
 
+     @Override
+    public void toPrint() {
+        super.toPrint();
+        System.out.println("Model: " + model);
+    }
+
 }
